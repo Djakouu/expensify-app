@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render editExpensePage correctly 1`] = `
+exports[`should render startEditExpensePage correctly 1`] = `
 <div>
   <h1>
     Edit Expense
