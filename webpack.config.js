@@ -6,7 +6,7 @@ const PENE = process.env.NODE_ENV;
 PENE = PENE || 'development';
 if (PENE === 'test') {
     require('dotenv').config({ path: '.env.test' })
-} else if (PENE === 'develoment') {
+} else if (PENE === 'development') {
     require('dotenv').config({ path: '.env.development' })
 }
 
