@@ -1,4 +1,5 @@
 import expensesReducer from '../../reducers/expenses';
+import expenses from '../fixtures/expenses';
 
 test('should set up default reducer', () => {
     const output = expensesReducer([], { type: '@@INIT'});
@@ -94,4 +95,13 @@ test('should edit expense in case of NO id match', () => {
     }
     const output = expensesReducer(state, action);
     expect(output).toEqual([{...state[0]}])
+});
+
+test('should set expenses', () => {
+    const action = {
+        type: 'SET_EXPENSES',
+        expenses: [expenses[0]]
+    }
+    const state = expensesReducer(expenses, action);
+    expect(state).toEqual([expenses[0]]);
 });
