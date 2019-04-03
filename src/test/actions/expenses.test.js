@@ -102,10 +102,9 @@ test('should start remove expense from database', (done) => {
         })
         return database.ref(`expenses/${id}`).once('value')
         }).then(snapshot => {
-            expect(snapshot).toBeFalsy();
+            expect(snapshot.val()).toBeFalsy();
             done();
         })
-        done();
 });
 
 test('should start edit expense in database', (done) => {
@@ -129,7 +128,6 @@ test('should start edit expense in database', (done) => {
             expect(snapshot.val()).toEqual(updates);
             done();
         });
-        done();
 });
 
 test('should setup edit expense action object', () => {

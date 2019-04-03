@@ -20,7 +20,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     amount={100}
     createdAt={0}
     description="rent"
-    id={1}
+    id="1"
     key="1"
     note="Note 1"
   />
@@ -28,7 +28,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     amount={200}
     createdAt={-345600000}
     description="gas"
-    id={2}
+    id="2"
     key="2"
     note="Note 2"
   />
@@ -36,7 +36,7 @@ exports[`should render ExpenseList with expenses 1`] = `
     amount={300}
     createdAt={345600000}
     description="water"
-    id={3}
+    id="3"
     key="3"
     note="Note 3"
   />
