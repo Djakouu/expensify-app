@@ -1,44 +1,96 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render ExpenseList with NO expenses 1`] = `
-<div>
-  <h1>
-    Expense List
-  </h1>
-  <p>
-     No expenses 
-  </p>
+<div
+  className="content-container"
+>
+  <div>
+    <div
+      className="list-header"
+    >
+      <div
+        className="show-for-mobile"
+      >
+        Expenses
+      </div>
+      <div
+        className="show-for-desktop"
+      >
+        Expense
+      </div>
+      <div
+        className="show-for-desktop"
+      >
+        Amount
+      </div>
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <div
+      className="list-item list-item--message"
+    >
+      <span>
+         No expenses 
+      </span>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`should render ExpenseList with expenses 1`] = `
-<div>
-  <h1>
-    Expense List
-  </h1>
-  <ExpenseListItem
-    amount={100}
-    createdAt={0}
-    description="rent"
-    id="1"
-    key="1"
-    note="Note 1"
-  />
-  <ExpenseListItem
-    amount={200}
-    createdAt={-345600000}
-    description="gas"
-    id="2"
-    key="2"
-    note="Note 2"
-  />
-  <ExpenseListItem
-    amount={300}
-    createdAt={345600000}
-    description="water"
-    id="3"
-    key="3"
-    note="Note 3"
-  />
+<div
+  className="content-container"
+>
+  <div>
+    <div
+      className="list-header"
+    >
+      <div
+        className="show-for-mobile"
+      >
+        Expenses
+      </div>
+      <div
+        className="show-for-desktop"
+      >
+        Expense
+      </div>
+      <div
+        className="show-for-desktop"
+      >
+        Amount
+      </div>
+    </div>
+  </div>
+  <div
+    className="list-body"
+  >
+    <ExpenseListItem
+      amount={100}
+      createdAt={0}
+      description="rent"
+      id="1"
+      key="1"
+      note="Note 1"
+    />
+    <ExpenseListItem
+      amount={200}
+      createdAt={-345600000}
+      description="gas"
+      id="2"
+      key="2"
+      note="Note 2"
+    />
+    <ExpenseListItem
+      amount={300}
+      createdAt={345600000}
+      description="water"
+      id="3"
+      key="3"
+      note="Note 3"
+    />
+  </div>
 </div>
 `;
